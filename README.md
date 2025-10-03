@@ -1,21 +1,21 @@
-## My Hyprland Dotfiles
+# My Hyprland Dotfiles
 Just my configuration for hyprland. You can customize it as you want.
 The sky's the limit!
-### Requirements
+## Requirements
 ---
-#### Essential
+### Essential
 - Hyprland (ofc)
 - Wofi (app launcher)
 - Kitty (terminal emulator)
 - Waybar
 - Hyprpaper (wallpapers)
-#### Optional
+### Optional
 - Hyprlock (lock screen)
 - Hyprshot (screenshots)
 - Wlogout
 - Fastfetch
 - Greetd with nwg-hello (login manager)
-### Installation
+## Installation
 ---
 1. Backup your existing configuration somewhere (optional, skip if you are installing this for first time):
 ```
@@ -37,9 +37,9 @@ yay -S hyprland waybar wofi kitty hyprlock hyprpaper hyprshot wlogout fastfetch 
 Hyprland
 ```
 
-### Post installation
+## Post installation
 ---
-#### Login manager
+### Login manager
 Config for greetd (nwg-hello) should be in `/etc` directory, so move it here:
 ```
 mv ~/.config/greetd /etc
@@ -49,7 +49,7 @@ Enable `greetd.service` so it will start at boot:
 ```
 systemctl enable greetd.service
 ```
-### Key bindings
+## Key bindings
 ---
 **Main bindings:**
 - `SUPER + Left Alt` – launch terminal
@@ -67,18 +67,18 @@ systemctl enable greetd.service
 
 **Screenshots:**
 - `Print` – screenshot area
-### Customization
+## Customization
 ---
-#### Main Hyprland config
+### Main Hyprland config
 All settings mentioned in this section are defined in the `hyprland.conf`
-##### Default programs
+#### Default programs
 You can set programs as default to use them in keybindings and etc:
 ```
 $terminal = kitty
 $fileManager = thunar
 $browser = firefox
 ```
-##### Keybindings
+#### Keybindings
 Create keybindings like this (example):
 ```
 bind = $mainMod, Q, exec, $browser # launch browser
@@ -88,7 +88,7 @@ bind = $mainMod, C, killactive # close active window
 
 `$mainMod` defines some key as main modifier (by default its "Win" key)
 You can change it to other key if you want it tho.
-##### Displays
+#### Displays
 Edit these settings to match your display(s) config:
 ```
 monitor=eDP-1,1920x1080@60,-1920x0,1
@@ -103,7 +103,7 @@ preload=/home/<username>/wallpapers/w2.jpg
 wallpaper=eDP-1,/home/<username>/wallpapers/w1.jpg
 wallpaper=HDMI-A-1,/home/<username>/wallpapers/w2.jpg
 ```
-### Troubleshooting
+## Troubleshooting
 ---
 **Icons not showing up on waybar**
 - You need to install font Awesome and any Nerd font from [here](https://www.nerdfonts.com/font-downloads) or from your linux distribution repo (example for arch linux):
