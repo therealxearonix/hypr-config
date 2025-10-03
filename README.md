@@ -2,7 +2,6 @@
 Just my configuration for hyprland. You can customize it as you want.
 The sky's the limit!
 ## Requirements
----
 ### Essential
 - Hyprland (ofc)
 - Wofi (app launcher)
@@ -16,7 +15,6 @@ The sky's the limit!
 - Fastfetch
 - Greetd with nwg-hello (login manager)
 ## Installation
----
 1. Backup your existing configuration somewhere (optional, skip if you are installing this for first time):
 ```
 mv ~/.config/hypr ~/hypr-backup
@@ -38,7 +36,6 @@ Hyprland
 ```
 
 ## Post installation
----
 ### Login manager
 Config for greetd (nwg-hello) should be in `/etc` directory, so move it here:
 ```
@@ -68,7 +65,6 @@ systemctl enable greetd.service
 **Screenshots:**
 - `Print` – screenshot area
 ## Customization
----
 ### Main Hyprland config
 All settings mentioned in this section are defined in the `hyprland.conf`
 #### Default programs
@@ -104,7 +100,6 @@ wallpaper=eDP-1,/home/<username>/wallpapers/w1.jpg
 wallpaper=HDMI-A-1,/home/<username>/wallpapers/w2.jpg
 ```
 ## Troubleshooting
----
 **Icons not showing up on waybar**
 - You need to install font Awesome and any Nerd font from [here](https://www.nerdfonts.com/font-downloads) or from your linux distribution repo (example for arch linux):
 ```
