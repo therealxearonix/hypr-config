@@ -47,7 +47,6 @@ Enable `greetd.service` so it will start at boot:
 systemctl enable greetd.service
 ```
 ## Key bindings
----
 **Main bindings:**
 - `SUPER + Left Alt` – launch terminal
 - `SUPER + C` – close window
