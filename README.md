@@ -89,7 +89,7 @@ Edit these settings to match your display(s) config:
 monitor=eDP-1,1920x1080@60,-1920x0,1
 monitor=HDMI-A-1,1920x1080@60,0x0,1
 ```
-#### Wallpapers
+### Wallpapers
 You can change the wallpapers and its locations in `hyprpaper.conf`:
 ```
 preload=/home/<username>/wallpapers/w1.jpg
